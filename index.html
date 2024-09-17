@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Pet</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="petName">Nome do Pet:</label>
+                <input type="text" id="petName" name="petName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="petType">Tipo do Animal:</label>
+                <select id="petType" name="petType" required>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="passaro">Pássaro</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="petAge">Idade do Pet (em anos):</label>
+                <input type="number" id="petAge" name="petAge" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="petGender">Sexo do Pet:</label>
+                <div>
+                    <input type="radio" id="male" name="petGender" value="Macho" required>
+                    <label for="male">Macho</label>
+
+                    <input type="radio" id="female" name="petGender" value="Fêmea" required>
+                    <label for="female">Fêmea</label>
+                </div>
+            </div>
+
+            <button type="submit">Cadastrar Pet</button>
+        </form>
+    </div>
+</body>
+</html>
